@@ -129,6 +129,15 @@ If GetKeyState("CapsLock","p") {
  Return
 }
 
+$!k::
+{
+If GetKeyState("CapsLock","p") {
+  Send "{Alt down}{Down down}"
+} 
+ Return
+}
+
+
 $+!i::
 {
 If GetKeyState("CapsLock","p") {
@@ -136,6 +145,16 @@ If GetKeyState("CapsLock","p") {
 } 
  Return
 }
+
+$!i::
+{
+If GetKeyState("CapsLock","p") {
+  Send "{Alt down}{Up down}"
+} 
+ Return
+}
+
+
 
 $2::
 {
